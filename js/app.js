@@ -43,8 +43,8 @@
             const frame = tab.getBoundingClientRect();                      //get the frame and the boundary of tab in constant frame
             const Top = frame.top;                                           //save the top of the section to a Top constant
                                                 
-                if(Top >= -100 && Top <=800){
-                  tab.setAttribute('class' ,"your-active-class" );          //in the condition of the Top of tab is between (-100 : 800), So add an attribute to tab as class of "your-active-class" 
+            if(Top >=-5 && Top <= 635){
+                  tab.classList.add('your-active-class');          //in the condition of the Top of tab is between (-50 : 650), So add a class of "your-active-class" 
                 }else{
                   tab.classList.remove("your-active-class");                //else, remove that class
             }        
