@@ -48,16 +48,7 @@
                 }else{
                   tab.classList.remove("your-active-class");                //else, remove that class
             }        
-           
-
-
-            const Links = document.querySelectorAll('a')                    //save all links in one variable and loop on them by for of
-            for( alink of Links){    
-                if(tab.getAttribute('data-nav') === alink.textContent){     //in the codition that the attribute 'data-nav' of the tap is equal to the text content of one lin of all links, so the color of back ground will be changed to '#8c929c' 
-                    alink.style.background = '#8c929c'
-            }
-            }
-        
+   
         }
         
     })
